@@ -1,3 +1,12 @@
+---
+title: Deepthflow
+emoji: 🔥
+colorFrom: indigo
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # Deepthflow Dockerization
 
 Build base image
