@@ -1,0 +1,16 @@
+FROM ghcr.io/astral-sh/uv:debian
+EXPOSE 7860
+RUN apt-get update
+RUN apt-get install -y libx11-dev 
+
+RUN apt-get install -y libxrender1 libxtst6 libxi6
+RUN apt-get install -yffmpeg libsm6 libxext6 
+RUN apt-get install -y libglfw3-dev libgles2-mesa-dev 
+
+# SSH into the container docker run -it -p 7860:7860 myusername/depthflow:latest sh
+# run `uvx depthflow gradio --share` to start the setup
+# Do all the animatiosn u will use once so models gets downloaded
+# then commit the container as a new image `myusername/depthflow:latest`
+# docker container ls
+# docker commit <Container id> myusername/depthflow:latest
+# docker push myusername/depthflow:latest
