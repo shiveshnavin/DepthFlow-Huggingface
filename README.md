@@ -16,10 +16,10 @@ docker build -t myusername/depthflow:latest -f Dockerfile.build
 
 Then
 ```
-# SSH into the container docker run -it -p 7860:7860 myusername/depthflow:latest sh
+# SSH into the container docker run -it -p 7860:7860 myusername/deepthflow:latest sh
 # run `uvx depthflow gradio --share` to start the setup
 # Do all the animatiosn u will use once so models gets downloaded
-# then commit the container as a new image `myusername/depthflow:latest`
+# then commit the container as a new image `myusername/deepthflow:latest`
 # docker container ls
 # docker commit <Container id> myusername/depthflow:latest
 # docker push myusername/depthflow:latest
@@ -27,6 +27,7 @@ Then
 
 Then build and run the executable image
 ```
-docker build -t myusername/depthflow-run:latest -f Dockerfile
-docker run -p 7860:7860 -it myusername/depthflow-run:latest 
+docker build -t myusername/deepthflow-run:latest -f Dockerfile
+docker run -p 7860:7860 -it myusername/deepthflow-run:latest 
+
 ```
