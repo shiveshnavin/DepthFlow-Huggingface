@@ -1,4 +1,4 @@
-FROM semibit/depthflow:base
+FROM semibit/deepthflow:base
 EXPOSE 7860
 
 # Pass CPU
